@@ -2,51 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="221cb622-539d-420a-8d63-721c20f33370" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/application/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Directors/Directors.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Directors/DirectorsHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Directors/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsDialog/DirectorsDialog.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsForm/DirectorsForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsForm/DirectorsFormHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsForm/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsSearch/DirectorsSearch.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsSearch/DirectorsSearchHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsSearch/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsTable/DirectorsTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsTable/DirectorsTableHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/DirectorsTable/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Movies/Movies.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Movies/MoviesHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Movies/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesDialog/MoviesDialog.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesForm/MoviesForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesForm/MoviesFormHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesForm/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesSearch/MoviesSearch.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesSearch/MoviesSearchHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesSearch/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTableHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesTable/queries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/MoviesTable/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Tabs/Tabs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Tabs/TabsHoc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/Tabs/styles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/components/theme.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/components/MoviesTable/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/components/MoviesTable/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/movie.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/movie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/schema/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema/schema.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,8 +25,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="306">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -87,8 +46,8 @@
       <file leaf-file-name="queries.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/src/components/MoviesTable/queries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="288">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -108,8 +67,8 @@
       <file leaf-file-name="MoviesTable.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTable.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+            <state relative-caret-position="230">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -120,8 +79,8 @@
       <file leaf-file-name="schema.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/schema/schema.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="134" column="34" selection-start-line="134" selection-start-column="34" selection-end-line="134" selection-end-column="34" />
+            <state relative-caret-position="-1638">
+              <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -131,18 +90,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="10" column="12" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectorsHoc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/src/components/Directors/DirectorsHoc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -162,8 +109,8 @@
       <file leaf-file-name="movie.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/models/movie.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="144">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -176,13 +123,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/models/movie.js" />
         <option value="$PROJECT_DIR$/server/models/director.js" />
-        <option value="$PROJECT_DIR$/server/schema/schema.js" />
-        <option value="$PROJECT_DIR$/server/server/app.js" />
         <option value="$PROJECT_DIR$/application/src/App.js" />
-        <option value="$PROJECT_DIR$/application/src/components/MoviesTable/queries.js" />
         <option value="$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTableHoc.js" />
+        <option value="$PROJECT_DIR$/server/server/app.js" />
+        <option value="$PROJECT_DIR$/server/models/movie.js" />
+        <option value="$PROJECT_DIR$/server/schema/schema.js" />
+        <option value="$PROJECT_DIR$/application/src/components/MoviesTable/queries.js" />
         <option value="$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTable.jsx" />
       </list>
     </option>
@@ -317,12 +264,12 @@
       <workItem from="1624544260741" duration="606000" />
       <workItem from="1624546985446" duration="3678000" />
       <workItem from="1624604132892" duration="14588000" />
-      <workItem from="1624689137546" duration="2742000" />
+      <workItem from="1624689137546" duration="4452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21614000" />
+    <option name="totallyTimeSpent" value="23324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1375" y="110" width="1185" height="1024" extended-state="0" />
@@ -428,20 +375,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/movie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/schema/schema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="134" column="34" selection-start-line="134" selection-start-column="34" selection-end-line="134" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/src/components/Directors/Directors.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -449,13 +382,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -483,23 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/src/components/MoviesTable/queries.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTableHoc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -510,10 +419,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/movie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/schema/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1638">
+          <caret line="62" column="7" lean-forward="true" selection-start-line="62" selection-start-column="7" selection-end-line="62" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/src/components/MoviesTable/queries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/src/components/MoviesTable/MoviesTable.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+        <state relative-caret-position="230">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
