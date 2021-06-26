@@ -13,89 +13,105 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import CreateIcon from '@material-ui/icons/Create';
 
 import DirectorsDialog from '../DirectorsDialog/DirectorsDialog';
+import DirectorsSearch from '../DirectorsSearch/DirectorsSearch';
 
 import withHocs from './DirectorsTableHoc';
 
-// const directors = [
-//   { id: 1, name: 'Quentin Tarantino', age: 55, movies: [ { name: 'Movie 1' }, { name: 'Movie 2' } ] },
-//   { id: 2, name: 'Guy Ritchie', age: 50, movies: [ { name: 'Movie 1' }, { name: 'Movie 2' } ] }
-// ];
-
 class DirectorsTable extends React.Component {
-  state = {
-    anchorEl: null,
-    openDialog: false,
-  };
+    state = {
+        anchorEl: null,
+        openDialog: false,
+        name: '',
+    };
 
-  handleDialogOpen = () => { this.setState({ openDialog: true }); };
-  handleDialogClose = () => { this.setState({ openDialog: false }); };
+    handleChange = name => (event) => {
+        this.setState({ [name]: event.target.value });
+    };
 
-  handleClick = ({ currentTarget }, data) => {
-    this.setState({
-      anchorEl: currentTarget,
-      data,
-    });
-  };
+    handleSearch = (e) => {
+        const { data } = this.props;
+        const { name } = this.state;
 
-  handleClose = () => { this.setState({ anchorEl: null }); };
+        if(e.charCode === 13) {
+            data.fetchMore({
+                variables: { name },
+                updateQuery: (previousResult, { fetchMoreResult }) => fetchMoreResult,
+            });
+        }
+    };
 
-  handleEdit = (row) => {
-    this.props.onOpen(this.state.data);
-    this.handleClose();
-  };
+    handleDialogOpen = () => { this.setState({ openDialog: true }); };
+    handleDialogClose = () => { this.setState({ openDialog: false }); };
 
-  handleDelete = () => {
-    this.handleDialogOpen();
-    this.handleClose();
-  };
+    handleClick = ({ currentTarget }, data) => {
+        this.setState({
+            anchorEl: currentTarget,
+            data,
+        });
+    };
 
-  render() {
-    const { anchorEl, openDialog, data: activeElem = {} } = this.state;
-    const { classes, data = {} } = this.props;
-    const { directors = [] } = data;
+    handleClose = () => { this.setState({ anchorEl: null }); };
 
-    return (
-      <>
-        <DirectorsDialog open={openDialog} handleClose={this.handleDialogClose} id={activeElem.id} />
-        <Paper className={classes.root}>
-          <Table>
-            <TableHead>
-              <TableRow>
-                <TableCell>Name</TableCell>
-                <TableCell align="right">Age</TableCell>
-                <TableCell>Movies</TableCell>
-                <TableCell></TableCell>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {directors.map(director => {
-                return (
-                  <TableRow key={director.id}>
-                    <TableCell component="th" scope="row">{director.name}</TableCell>
-                    <TableCell align="right">{director.age}</TableCell>
-                    <TableCell>
-                      {director.movies.map((movie, key) => <div key={movie.name}>{`${key+1}. `}{movie.name}</div>)}
-                    </TableCell>
-                    <TableCell align="right">
-                      <>
-                        <IconButton color="inherit" onClick={(e) => this.handleClick(e, director)}>
-                          <MoreIcon />
-                        </IconButton>
-                        <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose} >
-                          <MenuItem onClick={() => this.handleEdit(director)}><CreateIcon /> Edit</MenuItem>
-                          <MenuItem onClick={this.handleDelete}><DeleteIcon /> Delete</MenuItem>
-                        </Menu>
-                      </>
-                    </TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </Paper>
-      </>
-    );
-  }
+    handleEdit = (row) => {
+        this.props.onOpen(this.state.data);
+        this.handleClose();
+    };
+
+    handleDelete = () => {
+        this.handleDialogOpen();
+        this.handleClose();
+    };
+
+    render() {
+        const { anchorEl, openDialog, data: activeElem = {}, name } = this.state;
+        const { classes, data = {} } = this.props;
+        const { directors = [] } = data;
+
+        return (
+            <>
+                <Paper>
+                    <DirectorsSearch name={name} handleChange={this.handleChange} handleSearch={this.handleSearch} />
+                </Paper>
+                <DirectorsDialog open={openDialog} handleClose={this.handleDialogClose} id={activeElem.id} />
+                <Paper className={classes.root}>
+                    <Table>
+                        <TableHead>
+                            <TableRow>
+                                <TableCell>Name</TableCell>
+                                <TableCell align="right">Age</TableCell>
+                                <TableCell>Movies</TableCell>
+                                <TableCell></TableCell>
+                            </TableRow>
+                        </TableHead>
+                        <TableBody>
+                            {directors.map(director => {
+                                return (
+                                    <TableRow key={director.id}>
+                                        <TableCell component="th" scope="row">{director.name}</TableCell>
+                                        <TableCell align="right">{director.age}</TableCell>
+                                        <TableCell>
+                                            {director.movies.map((movie, key) => <div key={movie.name}>{`${key+1}. `}{movie.name}</div>)}
+                                        </TableCell>
+                                        <TableCell align="right">
+                                          <>
+                                              <IconButton color="inherit" onClick={(e) => this.handleClick(e, director)}>
+                                                  <MoreIcon />
+                                              </IconButton>
+                                              <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={this.handleClose} >
+                                                  <MenuItem onClick={() => this.handleEdit(director)}><CreateIcon /> Edit</MenuItem>
+                                                  <MenuItem onClick={this.handleDelete}><DeleteIcon /> Delete</MenuItem>
+                                              </Menu>
+                                          </>
+                                        </TableCell>
+                                    </TableRow>
+                                );
+                            })}
+                        </TableBody>
+                    </Table>
+                </Paper>
+            </>
+        );
+    }
 };
 
 export default withHocs(DirectorsTable);
